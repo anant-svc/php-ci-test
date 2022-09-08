@@ -1,0 +1,14 @@
+{
+    "name": "ananth/php-ci-test",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ananth Iyer",
+            "email": "ananthiyerit@gmail.com"
+        }
+    ],
+    "require": {
+        "greg0/lazer-database": "^2.0"
+    }
+}
