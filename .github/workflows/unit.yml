@@ -45,6 +45,5 @@ jobs:
         name: PHPUnit ${{ matrix.php-version.phpunit }}, PHP ${{ matrix.php-version.php }}
         with:
           version: ${{ matrix.php-version.phpunit }}
-          configuration: phpunit.xml
           args: --coverage-text
           php_version: ${{ matrix.php-version.php }}
