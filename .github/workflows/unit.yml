@@ -44,6 +44,10 @@ jobs:
       - uses: php-actions/phpunit@v3
         name: PHPUnit ${{ matrix.php-version.phpunit }}, PHP ${{ matrix.php-version.php }}
         with:
+          php_extensions: xdebug
           version: ${{ matrix.php-version.phpunit }}
           args: --coverage-text
           php_version: ${{ matrix.php-version.php }}
+        env:
+          XDEBUG_MODE: coverage
+          TEST_NAME: Scarlett
